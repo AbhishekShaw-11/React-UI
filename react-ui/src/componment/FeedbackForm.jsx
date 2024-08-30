@@ -58,10 +58,10 @@ const FeedbackForm = () => {
    }
   }
   return (
-    <card>
+    <Card>
     <form onSubmit={handleSubmit}>
     <h2> Rate our service </h2>
-    <RatingSelect select={setRating} selected={rating}/>
+    <Rating select={setRating} selected={rating}/>
      <div className="input-group">
      <input 
      onChange={handleTextChange} 
@@ -74,7 +74,7 @@ const FeedbackForm = () => {
      {message && <div className='message'>{message}</div>}
     </form>
       
-    </card>
+    </Card>
   )
 }
 

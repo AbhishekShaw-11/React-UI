@@ -1,11 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './componment/Header';
+import {FeedbackProvider}from './componment/FeedbackContext';
+import FeedbackForm from './componment/FeedbackForm';
 
 function App() {
   return (
-    <div className="App">
+    <div>
+
+    <FeedbackProvider>
    <Header/>
+ <FeedbackForm/>
+   </FeedbackProvider>
     </div>
   );
 }
